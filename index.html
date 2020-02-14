@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer type="text/javascript" src="moviedatabase.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+    <title>Project W2D5</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Welkom bij de Winc filmzoeker</h1>
+      </header>
+      <nav id="filterButtons">
+        <ul class="list" id="filterButtonsList">
+          <li class="filterButtonsListItem">
+            <input
+              type="radio"
+              id="button-recent-movies"
+              name="moviefilter"
+              value="recent-movies"
+            />
+            <label for="recent-movies">Laatste films, 2014 of nieuwer</label>
+          </li>
+          <li class="filterButtonsListItem">
+            <input
+              type="radio"
+              id="button-avengers"
+              name="moviefilter"
+              value="avenger-movies"
+            />
+            <label for="avenger-movies">Avenger Films</label>
+          </li>
+          <li class="filterButtonsListItem">
+            <input
+              type="radio"
+              id="button-xmen-movies"
+              name="moviefilter"
+              value="xmen-movies"
+            /><label for="xmen-movies">X-Men Films</label>
+          </li>
+          <li class="filterButtonsListItem">
+            <input
+              type="radio"
+              id="button-princess-movies"
+              name="moviefilter"
+              value="princess-movies"
+            /><label for="princess-movies">Princess Films</label>
+          </li>
+          <li class="filterButtonsListItem">
+            <input
+              type="radio"
+              id="button-batman-movies"
+              name="moviefilter"
+              value="batman-movies"
+            />
+            <label for="batman-movies">Batman Films</label>
+          </li>
+        </ul>
+        <hr />
+      </nav>
+      <main id="resultListContainer"></main>
+      <ul class="list" id="movieList">
+        <li id="resultListItem">Hier komen de films</li>
+      </ul>
+    </div>
+  </body>
+</html>
