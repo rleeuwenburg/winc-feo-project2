@@ -1,4 +1,5 @@
-const movies = JSON.parse({
+// Parse JSON data first to use it in Javascript
+const data = {
   Movies: [
     {
       Title: 'X-Men: Days of Future Past',
@@ -281,6 +282,7 @@ const movies = JSON.parse({
         'https://m.media-amazon.com/images/M/MV5BOTdkYjA4YzAtMjNiZS00OTgyLTg5Y2ItNGIwZGQyMTUzNzFiXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg'
     }
   ]
-});
+};
 
-// console.log(movies);
+const movies = JSON.parse(data);
+console.log(movies);
